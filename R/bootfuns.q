@@ -338,7 +338,7 @@ plot.boot <- function(x,index=1, t0=NULL, t=NULL, jack=FALSE,
     }
     t <- t[is.finite(t)]
     if (const(t, min(1e-8,mean(t, na.rm=TRUE)/1e6))) {
-        print(paste("All values of t* are equal to ", mean(t, na.rm=TRUE)))
+        print(gettextf("All values of t* are equal to %s", mean(t, na.rm=TRUE)))
         return(invisible(boot.out))
     }
     if (is.null(nclass)) nclass <- min(max(ceiling(length(t)/25),10),100)
@@ -361,7 +361,7 @@ plot.boot <- function(x,index=1, t0=NULL, t=NULL, jack=FALSE,
     }
     else {
 	if (qdist!="norm")
-            warning(gettextf("%s distribution not supported: using normal instead", sQuote(qdist)), domain = NA)
+            warning(gettextf("%s distribution not supported: using normal instead", sQuote(qdist)), domain = "R-boot")
         qq <- qnorm((seq_len(R))/(R+1))
         qlab <-"Quantiles of Standard Normal"
     }
@@ -840,7 +840,7 @@ cv.glm <- function(data, glmfit, cost=function(y,yhat) mean((y-yhat)^2),
     temp <- abs(kvals-K)
     if (!any(temp == 0))
         K <- kvals[temp == min(temp)][1L]
-    if (K!=K.o) warning(gettextf("'K' has been set to %f", K), domain = NA)
+    if (K!=K.o) warning(gettextf("'K' has been set to %f", K), domain = "R-boot")
     f <- ceiling(n/K)
     s <- sample0(rep(1L:K, f), n)
     n.s <- table(s)
@@ -915,7 +915,7 @@ boot.ci <- function(boot.out,conf = 0.95,type = "all",
         return(NULL)
     }
     if (length(t) != boot.out$R)
-        stop(gettextf("'t' must of length %d", boot.out$R), domain = NA)
+        stop(gettextf("'t' must of length %d", boot.out$R), domain = "R-boot")
     if (is.null(var.t))
         fins <- seq_along(t)[is.finite(t)]
     else {
@@ -1325,7 +1325,7 @@ censboot <-
             stop("sim = \"weird\" cannot be used with a \"coxph\" object")
         if (ncol(data) > 2L)
             warning(gettextf("only columns %s and %s of 'data' used",
-                             index[1L], index[2L]), domain = NA)
+                             index[1L], index[2L]), domain = "R-boot")
         data <- data[,index]
     }
     if (!is.null(cox) && is.null(cox$coefficients) &&
@@ -2094,7 +2094,7 @@ exp.tilt <- function(L, theta = NULL, t0 = 0, lambda = NULL,
             msd <- tilt.dis(lambda[i])
             if (is.na(msd) || (abs(msd) > 1e-6))
                 stop(gettextf("unable to find multiplier for %f", theta[i]),
-                     domain = NA)
+                     domain = "R-boot")
         }
     }
     else if (is.null(lambda))
@@ -2652,7 +2652,7 @@ saddle <-
         d <- ncol(A)
         if (length(u) != d)
             stop(gettextf("number of columns of 'A' (%d) not equal to length of 'u' (%d)",
-                          d, length(u)), domain = NA)
+                          d, length(u)), domain = "R-boot")
         n <- nrow(A)
     } else if (is.null(K.adj))
         stop("either 'A' and 'u' or 'K.adj' and 'K2' must be supplied")

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.0 / boot 1.3-21\n"
 "Report-Msgid-Bugs-To: bugs@r-project.org\n"
-"POT-Creation-Date: 2018-04-07 21:19\n"
+"POT-Creation-Date: 2024-09-13 18:58\n"
 "PO-Revision-Date: 2019-04-01 14:14+0200\n"
 "Last-Translator: Detlef Steuer <steuer@hsu-hh.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -14,250 +14,422 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid ""
-"'simple=TRUE' is only valid for 'sim=\"ordinary\", stype=\"i\", n=0', so "
-"ignored"
-msgstr ""
-"'simple=TRUE' gilt nur für 'sim=\"ordinary\", stype=\"i\", n=0' und wird "
-"daher hier ignoriert"
-
-msgid "no data in call to 'boot'"
-msgstr "keine Daten im Aufruf von 'boot'"
-
-msgid "negative value of 'm' supplied"
-msgstr "negativer Wert von 'm' angegeben"
-
-msgid "length of 'm' incompatible with 'strata'"
-msgstr "Länge von 'm' inkompatibel mit 'strata'"
-
-msgid "dimensions of 'R' and 'weights' do not match"
-msgstr "Dimensionen von 'R' und 'weights' stimmen nicht überein"
-
-msgid "arguments are not all the same type of \"boot\" object"
-msgstr "Argumente waren nicht all vom selben Typ des 'boot'-Objekts"
-
-# http://de.wikipedia.org/wiki/Resampling
-msgid "index array not defined for model-based resampling"
-msgstr "Index-Array nicht für Modell-basiertes Resampling definiert"
-
-msgid "boot.array not implemented for this object"
-msgstr "'boot.array' nicht für dieses Objekt implementiert"
-
-# http://de.wikipedia.org/wiki/Bootstrapping_(Statistik)
-msgid "array cannot be found for parametric bootstrap"
-msgstr "Array kann nicht für parametrisches Bootstrapping gefunden werden"
-
 # R/bootfuns.q
+#. R/bootfuns.q: gettextf("%s distribution not supported: using normal instead",     sQuote(qdist))
+#: R/bootfuns.q:0
 msgid "%s distribution not supported: using normal instead"
-msgstr ""
-"%s Verteilung nicht unterstützt, stattdessen wird Normalverteilung benutzt"
+msgstr "%s Verteilung nicht unterstützt, stattdessen wird Normalverteilung benutzt"
 
-msgid "unknown type of \"boot\" object"
-msgstr "unbekanter Typ des \"boot\" Objektes"
-
-msgid "only first element of 'index' used"
-msgstr "nur erstes Element von 'index' benutzt"
-
-msgid "'K' outside allowable range"
-msgstr "'K' außerhalb des erlaubbaren Bereichs"
-
-msgid "'K' has been set to %f"
-msgstr "'K' wurde auf %f gesetzt"
-
-msgid "'t' and 't0' must be supplied together"
-msgstr "'t' und 't0' müssen zusammen angegeben werden"
-
-msgid "index out of bounds; minimum index only used."
-msgstr "Index außerhalb des Rands. Minimalindex wird benutzt."
-
-msgid "'t' must of length %d"
-msgstr "'t' muss die Länge %d haben"
-
-# http://de.wikipedia.org/wiki/Studentisierung
-msgid "bootstrap variances needed for studentized intervals"
-msgstr "Bootstrap-Varianzen für studentisierte Intervalle benötigt"
-
-msgid "BCa intervals not defined for time series bootstraps"
-msgstr "BCa Intervalle nicht für Zeitreihenbootstrap definiert."
-
-msgid "bootstrap output object or 't0' required"
-msgstr "Bootstrap-Ausgabeobjekt oder 't0' benötigt"
-
-msgid "unable to calculate 'var.t0'"
-msgstr "'var.t0' kann nicht berechnet werden"
-
-# http://xtremes.stat.math.uni-siegen.de/xtremes_old/history.pdf
-msgid "extreme order statistics used as endpoints"
-msgstr "Extremwertstatistiken werden als Endpunkte benutzt"
-
-msgid "variance required for studentized intervals"
-msgstr "Varianz für studentisierte Intervalle benötigt"
-
-msgid "estimated adjustment 'w' is infinite"
-msgstr "geschätzte Anpassung 'w' ist unendlich"
-
-msgid "estimated adjustment 'a' is NA"
-msgstr "geschätzte Einstellung 'a' ist NA"
-
-msgid "only first element of 'index' used in 'abc.ci'"
-msgstr "nur erstes Element von 'index' wird in 'abc.ci' benutzt"
-
-msgid "missing values not allowed in 'data'"
-msgstr "fehlende Werte in 'data' nicht erlaubt"
-
-msgid "unknown value of 'sim'"
-msgstr "unbekannter Wert von 'sim'"
-
-msgid "'data' must be a matrix with at least 2 columns"
-msgstr "'data' muss eine Matrix mit mindestens 2 Spalten sein"
-
-msgid "'index' must contain 2 elements"
-msgstr "'index' muss 2 Elemente enthalten"
-
-msgid "only first 2 elements of 'index' used"
-msgstr "nur die beiden ersten Elemente von 'index' werden benutzt"
-
-msgid "indices are incompatible with 'ncol(data)'"
-msgstr "Indizes sind inkompatibel mit 'ncol(data)'"
-
-msgid "sim = \"weird\" cannot be used with a \"coxph\" object"
-msgstr "sim = \"weird\" kann nicht mit einem \"coxph\" Objekt benutzt werden"
-
-msgid "only columns %s and %s of 'data' used"
-msgstr "nur die Spalten %s und %s von 'data' werden benutzt"
-
-msgid "no coefficients in Cox model -- model ignored"
-msgstr "keine Koeffizienten im Cox-Modell -- Modell ignoriert"
-
+#. R/bootfuns.q: stop("'F.surv' is required but missing")
+#: R/bootfuns.q:0
 msgid "'F.surv' is required but missing"
 msgstr "'F.surv' wird benötigt, fehlt jedoch"
 
+#. R/bootfuns.q: stop("'G.surv' is required but missing")
+#: R/bootfuns.q:0
 msgid "'G.surv' is required but missing"
 msgstr "'G.surv' wird benötigt, fehlt jedoch"
 
-msgid "'strata' of wrong length"
-msgstr "'strata' hat falsche Länge"
+#. R/bootfuns.q: gettextf("'K' has been set to %f", K)
+#: R/bootfuns.q:0
+msgid "'K' has been set to %f"
+msgstr "'K' wurde auf %f gesetzt"
 
-msgid "influence values cannot be found from a parametric bootstrap"
-msgstr ""
-"es können keine beeinflussenden Werte von einem parametrischen Bootstrap "
-"gefunden werden"
+#. R/bootfuns.q: stop("'K' outside allowable range")
+#: R/bootfuns.q:0
+msgid "'K' outside allowable range"
+msgstr "'K' außerhalb des erlaubbaren Bereichs"
 
-msgid "neither 'data' nor bootstrap object specified"
-msgstr "weder 'data' noch Bootstrap-Objekt angegeben"
-
-msgid "neither 'statistic' nor bootstrap object specified"
-msgstr "weder 'statistic' noch Bootstrap-Objekt angegeben"
-
-msgid "'stype' must be \"w\" for type=\"inf\""
-msgstr "'stype' muss für type=\"inf\" 'w' sein"
-
-msgid "input 't' ignored; type=\"inf\""
-msgstr "Eingabe 't' ignoriert; type=\"inf\""
-
-msgid "bootstrap object needed for type=\"reg\""
-msgstr "Bootstrap-Objekt für type=\"reg\" benötigt"
-
-msgid "input 't' ignored; type=\"jack\""
-msgstr "Eingabe 't' ignoriert; type=\"jack\""
-
-msgid "input 't' ignored; type=\"pos\""
-msgstr "Eingabe 't' ignoriert; type=\"pos\""
-
-msgid "input 't0' ignored: neither 't' nor 'L' supplied"
-msgstr "Eingabe 't0' ignoriert: weder 't' noch 'L' angegeben"
-
-msgid "bootstrap output matrix missing"
-msgstr "Bootstrap-Ausgabematrix fehlt"
-
-msgid "use 'boot.ci' for scalar parameters"
-msgstr "benutzen Sie 'boot.ci' für skalare Parameter"
-
-msgid "unable to achieve requested overall error rate"
-msgstr "geforderte overall Fehlerquote kann nicht erreicht werden"
-
-msgid "unable to find multiplier for %f"
-msgstr "Es kann kein Multiplikator für %f gefunden werden"
-
-msgid "'theta' or 'lambda' required"
-msgstr "'theta' oder 'lambda' benötigt"
-
-msgid "0 elements not allowed in 'q'"
-msgstr "0 Elemente nicht in 'q' erlaubt"
-
-msgid "bootstrap replicates must be supplied"
-msgstr "Bootstrap-Kopien müssen angegeben werden"
-
-msgid "either 'boot.out' or 'w' must be specified."
-msgstr "Entweder 'boot.out' oder 'w' muss angegeben werden."
-
-msgid "only first column of 't' used"
-msgstr "Nur erste Spalte von 't' wird benutzt."
-
-msgid "invalid value of 'sim' supplied"
-msgstr "ungültiger Wert von 'sim' angegeben"
-
-msgid "'R' and 'theta' have incompatible lengths"
-msgstr "'R' und 'theta' haben inkompatible Längen"
-
-msgid "R[1L] must be positive for frequency smoothing"
-msgstr "R[1L] muss für Frequenz-Glättung positiv sein"
-
+#. R/bootfuns.q: stop("'R' and 'alpha' have incompatible lengths")
+#: R/bootfuns.q:0
 msgid "'R' and 'alpha' have incompatible lengths"
 msgstr "'R' und 'alpha' haben inkompatible Längen"
 
-msgid "extreme values used for quantiles"
-msgstr "Extremwerte werden für Quantile benutzt"
+#. R/bootfuns.q: stop("'R' and 'theta' have incompatible lengths")
+#: R/bootfuns.q:0
+msgid "'R' and 'theta' have incompatible lengths"
+msgstr "'R' und 'theta' haben inkompatible Längen"
 
-msgid "'theta' must be supplied if R[1L] = 0"
-msgstr "'theta' muss angegeben werden, falls R[1L] = 0 ist"
-
-msgid "'alpha' ignored; R[1L] = 0"
-msgstr "'alpha' ignoriert; R[1L]=0"
-
-msgid "control methods undefined when 'boot.out' has weights"
-msgstr "Kontrollmethoden undefiniert, wenn 'boot.out' Gewichte hat"
-
-msgid "number of columns of 'A' (%d) not equal to length of 'u' (%d)"
-msgstr ""
-"Anzahl der Spalten von 'A' (%d) ist nicht gleich der Länge von 'u' (%d)"
-
-msgid "either 'A' and 'u' or 'K.adj' and 'K2' must be supplied"
-msgstr "entweder 'A' und 'u' oder 'K.adj' und 'K2' müssen angegeben werden"
-
-msgid "this type not implemented for Poisson"
-msgstr "dieser Typ ist nicht für Poisson implementiert"
-
-msgid "this type not implemented for Binary"
-msgstr "dieser Typ ist nicht für Binary implementiert"
-
-msgid "one of 't' or 't0' required"
-msgstr "eins von 't' oder 't0' benötigt"
-
-msgid "function 'u' missing"
-msgstr "Funktion 'u' fehlt"
-
-msgid "'u' must be a function"
-msgstr "'u' muss eine Funktion sein"
-
-msgid "unable to find range"
-msgstr "Bereich kann nicht gefunden werden"
-
+#. R/bootfuns.q: stop("'R' must be positive")
+#: R/bootfuns.q:0
 msgid "'R' must be positive"
 msgstr "'R' muss psitiv sein"
 
+#. R/bootfuns.q: warning("'alpha' ignored; R[1L] = 0")
+#: R/bootfuns.q:0
+msgid "'alpha' ignored; R[1L] = 0"
+msgstr "'alpha' ignoriert; R[1L]=0"
+
+#. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
+#. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
+#: R/bootfuns.q:0
+msgid "'data' must be a matrix with at least 2 columns"
+msgstr "'data' muss eine Matrix mit mindestens 2 Spalten sein"
+
+#. R/bootfuns.q: stop("'index' must contain 2 elements")
+#: R/bootfuns.q:0
+msgid "'index' must contain 2 elements"
+msgstr "'index' muss 2 Elemente enthalten"
+
+#. R/bootfuns.q: warning("'simple=TRUE' is only valid for 'sim=\"ordinary\", stype=\"i\", n=0', so ignored")
+#: R/bootfuns.q:0
+msgid "'simple=TRUE' is only valid for 'sim=\"ordinary\", stype=\"i\", n=0', so ignored"
+msgstr "'simple=TRUE' gilt nur für 'sim=\"ordinary\", stype=\"i\", n=0' und wird daher hier ignoriert"
+
+#. R/bootfuns.q: stop("'strata' of wrong length")
+#: R/bootfuns.q:0
+msgid "'strata' of wrong length"
+msgstr "'strata' hat falsche Länge"
+
+#. R/bootfuns.q: stop("'stype' must be \"w\" for type=\"inf\"")
+#: R/bootfuns.q:0
+msgid "'stype' must be \"w\" for type=\"inf\""
+msgstr "'stype' muss für type=\"inf\" 'w' sein"
+
+#. R/bootfuns.q: stop("'t' and 't0' must be supplied together")
+#: R/bootfuns.q:0
+msgid "'t' and 't0' must be supplied together"
+msgstr "'t' und 't0' müssen zusammen angegeben werden"
+
+#. R/bootfuns.q: gettextf("'t' must of length %d", boot.out$R)
+#: R/bootfuns.q:0
+msgid "'t' must of length %d"
+msgstr "'t' muss die Länge %d haben"
+
+#. R/bootfuns.q: stop("'theta' must be supplied if R[1L] = 0")
+#: R/bootfuns.q:0
+msgid "'theta' must be supplied if R[1L] = 0"
+msgstr "'theta' muss angegeben werden, falls R[1L] = 0 ist"
+
+#. R/bootfuns.q: stop("'theta' or 'lambda' required")
+#: R/bootfuns.q:0
+msgid "'theta' or 'lambda' required"
+msgstr "'theta' oder 'lambda' benötigt"
+
+#. R/bootfuns.q: stop("'u' must be a function")
+#: R/bootfuns.q:0
+msgid "'u' must be a function"
+msgstr "'u' muss eine Funktion sein"
+
+#. R/bootpracs.q: stop("0 elements not allowed in 'q'")
+#: R/bootpracs.q:0
+msgid "0 elements not allowed in 'q'"
+msgstr "0 Elemente nicht in 'q' erlaubt"
+
+#. R/bootfuns.q: gettextf("All values of t* are equal to %s", mean(t, na.rm = TRUE))
+#: R/bootfuns.q:0
+msgid "All values of t* are equal to %s"
+msgstr ""
+
+#. R/bootfuns.q: warning("BCa intervals not defined for time series bootstraps")
+#: R/bootfuns.q:0
+msgid "BCa intervals not defined for time series bootstraps"
+msgstr "BCa Intervalle nicht für Zeitreihenbootstrap definiert."
+
+#. R/bootfuns.q: stop("R[1L] must be positive for frequency smoothing")
+#: R/bootfuns.q:0
+msgid "R[1L] must be positive for frequency smoothing"
+msgstr "R[1L] muss für Frequenz-Glättung positiv sein"
+
+#. R/bootfuns.q: stop("arguments are not all the same type of \"boot\" object")
+#: R/bootfuns.q:0
+msgid "arguments are not all the same type of \"boot\" object"
+msgstr "Argumente waren nicht all vom selben Typ des 'boot'-Objekts"
+
+# http://de.wikipedia.org/wiki/Bootstrapping_(Statistik)
+#. R/bootfuns.q: stop("array cannot be found for parametric bootstrap")
+#: R/bootfuns.q:0
+msgid "array cannot be found for parametric bootstrap"
+msgstr "Array kann nicht für parametrisches Bootstrapping gefunden werden"
+
+#. R/bootfuns.q: stop("boot.array not implemented for this object")
+#: R/bootfuns.q:0
+msgid "boot.array not implemented for this object"
+msgstr "'boot.array' nicht für dieses Objekt implementiert"
+
+#. R/bootfuns.q: stop("bootstrap object needed for type=\"reg\"")
+#: R/bootfuns.q:0
+msgid "bootstrap object needed for type=\"reg\""
+msgstr "Bootstrap-Objekt für type=\"reg\" benötigt"
+
+#. R/bootfuns.q: stop("bootstrap output matrix missing")
+#: R/bootfuns.q:0
+msgid "bootstrap output matrix missing"
+msgstr "Bootstrap-Ausgabematrix fehlt"
+
+#. R/bootfuns.q: stop("bootstrap output object or 't0' required")
+#: R/bootfuns.q:0
+msgid "bootstrap output object or 't0' required"
+msgstr "Bootstrap-Ausgabeobjekt oder 't0' benötigt"
+
+#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
+#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
+#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
+#: R/bootpracs.q:0
+msgid "bootstrap replicates must be supplied"
+msgstr "Bootstrap-Kopien müssen angegeben werden"
+
+# http://de.wikipedia.org/wiki/Studentisierung
+#. R/bootfuns.q: warning("bootstrap variances needed for studentized intervals")
+#: R/bootfuns.q:0
+msgid "bootstrap variances needed for studentized intervals"
+msgstr "Bootstrap-Varianzen für studentisierte Intervalle benötigt"
+
+#. R/bootfuns.q: stop("control methods undefined when 'boot.out' has weights")
+#: R/bootfuns.q:0
+msgid "control methods undefined when 'boot.out' has weights"
+msgstr "Kontrollmethoden undefiniert, wenn 'boot.out' Gewichte hat"
+
+#. R/bootfuns.q: stop("dimensions of 'R' and 'weights' do not match")
+#: R/bootfuns.q:0
+msgid "dimensions of 'R' and 'weights' do not match"
+msgstr "Dimensionen von 'R' und 'weights' stimmen nicht überein"
+
+#. R/bootfuns.q: stop("either 'A' and 'u' or 'K.adj' and 'K2' must be supplied")
+#: R/bootfuns.q:0
+msgid "either 'A' and 'u' or 'K.adj' and 'K2' must be supplied"
+msgstr "entweder 'A' und 'u' oder 'K.adj' und 'K2' müssen angegeben werden"
+
+#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
+#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
+#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
+#: R/bootpracs.q:0
+msgid "either 'boot.out' or 'w' must be specified."
+msgstr "Entweder 'boot.out' oder 'w' muss angegeben werden."
+
+#. R/bootfuns.q: stop("estimated adjustment 'a' is NA")
+#: R/bootfuns.q:0
+msgid "estimated adjustment 'a' is NA"
+msgstr "geschätzte Einstellung 'a' ist NA"
+
+#. R/bootfuns.q: stop("estimated adjustment 'w' is infinite")
+#: R/bootfuns.q:0
+msgid "estimated adjustment 'w' is infinite"
+msgstr "geschätzte Anpassung 'w' ist unendlich"
+
+# http://xtremes.stat.math.uni-siegen.de/xtremes_old/history.pdf
+#. R/bootfuns.q: warning("extreme order statistics used as endpoints")
+#: R/bootfuns.q:0
+msgid "extreme order statistics used as endpoints"
+msgstr "Extremwertstatistiken werden als Endpunkte benutzt"
+
+#. R/bootfuns.q: warning("extreme values used for quantiles")
+#: R/bootfuns.q:0
+msgid "extreme values used for quantiles"
+msgstr "Extremwerte werden für Quantile benutzt"
+
+#. R/bootfuns.q: stop("function 'u' missing")
+#: R/bootfuns.q:0
+msgid "function 'u' missing"
+msgstr "Funktion 'u' fehlt"
+
+# http://de.wikipedia.org/wiki/Resampling
+#. R/bootfuns.q: stop("index array not defined for model-based resampling")
+#: R/bootfuns.q:0
+msgid "index array not defined for model-based resampling"
+msgstr "Index-Array nicht für Modell-basiertes Resampling definiert"
+
+#. R/bootfuns.q: warning("index out of bounds; minimum index only used.")
+#: R/bootfuns.q:0
+msgid "index out of bounds; minimum index only used."
+msgstr "Index außerhalb des Rands. Minimalindex wird benutzt."
+
+#. R/bootfuns.q: stop("indices are incompatible with 'ncol(data)'")
+#: R/bootfuns.q:0
+msgid "indices are incompatible with 'ncol(data)'"
+msgstr "Indizes sind inkompatibel mit 'ncol(data)'"
+
+#. R/bootfuns.q: stop("influence values cannot be found from a parametric bootstrap")
+#: R/bootfuns.q:0
+msgid "influence values cannot be found from a parametric bootstrap"
+msgstr "es können keine beeinflussenden Werte von einem parametrischen Bootstrap gefunden werden"
+
+#. R/bootfuns.q: warning("input 't' ignored; type=\"inf\"")
+#: R/bootfuns.q:0
+msgid "input 't' ignored; type=\"inf\""
+msgstr "Eingabe 't' ignoriert; type=\"inf\""
+
+#. R/bootfuns.q: warning("input 't' ignored; type=\"jack\"")
+#: R/bootfuns.q:0
+msgid "input 't' ignored; type=\"jack\""
+msgstr "Eingabe 't' ignoriert; type=\"jack\""
+
+#. R/bootfuns.q: warning("input 't' ignored; type=\"pos\"")
+#: R/bootfuns.q:0
+msgid "input 't' ignored; type=\"pos\""
+msgstr "Eingabe 't' ignoriert; type=\"pos\""
+
+#. R/bootfuns.q: warning("input 't0' ignored: neither 't' nor 'L' supplied")
+#: R/bootfuns.q:0
+msgid "input 't0' ignored: neither 't' nor 'L' supplied"
+msgstr "Eingabe 't0' ignoriert: weder 't' noch 'L' angegeben"
+
+#. R/bootfuns.q: stop("invalid value of 'l'")
+#: R/bootfuns.q:0
 msgid "invalid value of 'l'"
 msgstr "ungültiger Wert von 'l'"
 
-msgid "unrecognized value of 'sim'"
-msgstr "unbekannter Wert von 'sim'"
+#. R/bootfuns.q: stop("invalid value of 'sim' supplied")
+#: R/bootfuns.q:0
+msgid "invalid value of 'sim' supplied"
+msgstr "ungültiger Wert von 'sim' angegeben"
 
-# http://de.wikipedia.org/wiki/Multivariat
-msgid "multivariate time series not allowed"
-msgstr "multivariate Zeitserien nicht erlaubt"
+#. R/bootfuns.q: stop("length of 'm' incompatible with 'strata'")
+#: R/bootfuns.q:0
+msgid "length of 'm' incompatible with 'strata'"
+msgstr "Länge von 'm' inkompatibel mit 'strata'"
 
+#. R/bootpracs.q: gettextf("likelihood exceeds %f at only one point", lim)
+#: R/bootpracs.q:0
+msgid "likelihood exceeds %f at only one point"
+msgstr "Wahrscheinlichkeit überschreitet %f an einem Punkt"
+
+#. R/bootpracs.q: gettextf("likelihood never exceeds %f", lim)
+#: R/bootpracs.q:0
 msgid "likelihood never exceeds %f"
 msgstr "Wahrscheinlichkeit überschreitet niemals %f"
 
-msgid "likelihood exceeds %f at only one point"
-msgstr "Wahrscheinlichkeit überschreitet %f an einem Punkt"
+#. R/bootfuns.q: stop("missing values not allowed in 'data'")
+#: R/bootfuns.q:0
+msgid "missing values not allowed in 'data'"
+msgstr "fehlende Werte in 'data' nicht erlaubt"
+
+# http://de.wikipedia.org/wiki/Multivariat
+#. R/bootfuns.q: stop("multivariate time series not allowed")
+#: R/bootfuns.q:0
+msgid "multivariate time series not allowed"
+msgstr "multivariate Zeitserien nicht erlaubt"
+
+#. R/bootfuns.q: stop("negative value of 'm' supplied")
+#: R/bootfuns.q:0
+msgid "negative value of 'm' supplied"
+msgstr "negativer Wert von 'm' angegeben"
+
+#. R/bootfuns.q: stop("neither 'data' nor bootstrap object specified")
+#: R/bootfuns.q:0
+msgid "neither 'data' nor bootstrap object specified"
+msgstr "weder 'data' noch Bootstrap-Objekt angegeben"
+
+#. R/bootfuns.q: stop("neither 'statistic' nor bootstrap object specified")
+#: R/bootfuns.q:0
+msgid "neither 'statistic' nor bootstrap object specified"
+msgstr "weder 'statistic' noch Bootstrap-Objekt angegeben"
+
+#. R/bootfuns.q: warning("no coefficients in Cox model -- model ignored")
+#: R/bootfuns.q:0
+msgid "no coefficients in Cox model -- model ignored"
+msgstr "keine Koeffizienten im Cox-Modell -- Modell ignoriert"
+
+#. R/bootfuns.q: stop("no data in call to 'boot'")
+#: R/bootfuns.q:0
+msgid "no data in call to 'boot'"
+msgstr "keine Daten im Aufruf von 'boot'"
+
+#. R/bootfuns.q: gettextf("number of columns of 'A' (%d) not equal to length of 'u' (%d)",     d, length(u))
+#: R/bootfuns.q:0
+msgid "number of columns of 'A' (%d) not equal to length of 'u' (%d)"
+msgstr "Anzahl der Spalten von 'A' (%d) ist nicht gleich der Länge von 'u' (%d)"
+
+#. R/bootfuns.q: stop("one of 't' or 't0' required")
+#: R/bootfuns.q:0
+msgid "one of 't' or 't0' required"
+msgstr "eins von 't' oder 't0' benötigt"
+
+#. R/bootfuns.q: gettextf("only columns %s and %s of 'data' used", index[1L],     index[2L])
+#: R/bootfuns.q:0
+msgid "only columns %s and %s of 'data' used"
+msgstr "nur die Spalten %s und %s von 'data' werden benutzt"
+
+#. R/bootfuns.q: warning("only first 2 elements of 'index' used")
+#: R/bootfuns.q:0
+msgid "only first 2 elements of 'index' used"
+msgstr "nur die beiden ersten Elemente von 'index' werden benutzt"
+
+#. R/bootfuns.q: warning("only first column of 't' used")
+#: R/bootfuns.q:0
+msgid "only first column of 't' used"
+msgstr "Nur erste Spalte von 't' wird benutzt."
+
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootfuns.q: warning("only first element of 'index' used")
+#. R/bootpracs.q: warning("only first element of 'index' used")
+#. R/bootpracs.q: warning("only first element of 'index' used")
+#. R/bootpracs.q: warning("only first element of 'index' used")
+#: R/bootfuns.q:0 R/bootpracs.q:0
+msgid "only first element of 'index' used"
+msgstr "nur erstes Element von 'index' benutzt"
+
+#. R/bootfuns.q: warning("only first element of 'index' used in 'abc.ci'")
+#: R/bootfuns.q:0
+msgid "only first element of 'index' used in 'abc.ci'"
+msgstr "nur erstes Element von 'index' wird in 'abc.ci' benutzt"
+
+#. R/bootfuns.q: stop("sim = \"weird\" cannot be used with a \"coxph\" object")
+#: R/bootfuns.q:0
+msgid "sim = \"weird\" cannot be used with a \"coxph\" object"
+msgstr "sim = \"weird\" kann nicht mit einem \"coxph\" Objekt benutzt werden"
+
+#. R/bootfuns.q: stop("this type not implemented for Binary")
+#: R/bootfuns.q:0
+msgid "this type not implemented for Binary"
+msgstr "dieser Typ ist nicht für Binary implementiert"
+
+#. R/bootfuns.q: stop("this type not implemented for Poisson")
+#: R/bootfuns.q:0
+msgid "this type not implemented for Poisson"
+msgstr "dieser Typ ist nicht für Poisson implementiert"
+
+#. R/bootfuns.q: warning("unable to achieve requested overall error rate")
+#: R/bootfuns.q:0
+msgid "unable to achieve requested overall error rate"
+msgstr "geforderte overall Fehlerquote kann nicht erreicht werden"
+
+#. R/bootfuns.q: stop("unable to calculate 'var.t0'")
+#: R/bootfuns.q:0
+msgid "unable to calculate 'var.t0'"
+msgstr "'var.t0' kann nicht berechnet werden"
+
+#. R/bootfuns.q: gettextf("unable to find multiplier for %f", theta[i])
+#: R/bootfuns.q:0
+msgid "unable to find multiplier for %f"
+msgstr "Es kann kein Multiplikator für %f gefunden werden"
+
+#. R/bootfuns.q: stop("unable to find range")
+#. R/bootfuns.q: stop("unable to find range")
+#. R/bootfuns.q: stop("unable to find range")
+#. R/bootfuns.q: stop("unable to find range")
+#: R/bootfuns.q:0
+msgid "unable to find range"
+msgstr "Bereich kann nicht gefunden werden"
+
+#. R/bootfuns.q: warning("unknown type of \"boot\" object")
+#: R/bootfuns.q:0
+msgid "unknown type of \"boot\" object"
+msgstr "unbekanter Typ des \"boot\" Objektes"
+
+#. R/bootfuns.q: stop("unknown value of 'sim'")
+#: R/bootfuns.q:0
+msgid "unknown value of 'sim'"
+msgstr "unbekannter Wert von 'sim'"
+
+#. R/bootfuns.q: stop("unrecognized value of 'sim'")
+#: R/bootfuns.q:0
+msgid "unrecognized value of 'sim'"
+msgstr "unbekannter Wert von 'sim'"
+
+#. R/bootfuns.q: stop("use 'boot.ci' for scalar parameters")
+#: R/bootfuns.q:0
+msgid "use 'boot.ci' for scalar parameters"
+msgstr "benutzen Sie 'boot.ci' für skalare Parameter"
+
+#. R/bootfuns.q: warning("variance required for studentized intervals")
+#: R/bootfuns.q:0
+msgid "variance required for studentized intervals"
+msgstr "Varianz für studentisierte Intervalle benötigt"

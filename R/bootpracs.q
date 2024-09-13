@@ -68,11 +68,11 @@ lik.CI <- function(like, lim ) {
 	n <- length(L)
 	i <- min(c(1L:n)[L > lim])
 	if (is.na(i)) stop(gettextf("likelihood never exceeds %f", lim),
-                           domain = NA)
+                           domain = "R-boot")
 	j <- max(c(1L:n)[L > lim])
 	if (i ==j )
             stop(gettextf("likelihood exceeds %f at only one point", lim),
-                 domain = NA)
+                 domain = "R-boot")
 	if (i == 1) bot <- -Inf
 	else {
             i <- i + c(-1, 0, 1)
