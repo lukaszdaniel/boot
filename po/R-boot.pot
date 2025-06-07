@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: boot 1.3-31\n"
-"POT-Creation-Date: 2024-09-13 18:58\n"
+"POT-Creation-Date: 2025-06-05 16:21\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 
@@ -75,7 +75,6 @@ msgstr ""
 
 
 #: R/bootfuns.q: 0
-#. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
 #. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
 
 msgid "'data' must be a matrix with at least 2 columns"
@@ -217,8 +216,6 @@ msgstr ""
 
 #: R/bootpracs.q: 0
 #. R/bootpracs.q: stop("bootstrap replicates must be supplied")
-#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
-#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
 
 msgid "bootstrap replicates must be supplied"
 msgstr ""
@@ -253,8 +250,6 @@ msgstr ""
 
 
 #: R/bootpracs.q: 0
-#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
-#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
 #. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
 
 msgid "either 'boot.out' or 'w' must be specified."
@@ -473,19 +468,7 @@ msgstr ""
 
 #: R/bootfuns.q: 0
 #: R/bootpracs.q: 0
-#: R/bootpracs.q: 0
-#: R/bootpracs.q: 0
 #. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootpracs.q: warning("only first element of 'index' used")
-#. R/bootpracs.q: warning("only first element of 'index' used")
 #. R/bootpracs.q: warning("only first element of 'index' used")
 
 msgid "only first element of 'index' used"
@@ -542,9 +525,6 @@ msgstr ""
 
 
 #: R/bootfuns.q: 0
-#. R/bootfuns.q: stop("unable to find range")
-#. R/bootfuns.q: stop("unable to find range")
-#. R/bootfuns.q: stop("unable to find range")
 #. R/bootfuns.q: stop("unable to find range")
 
 msgid "unable to find range"

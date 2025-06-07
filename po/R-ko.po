@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: boot 1.3-6\n"
-"POT-Creation-Date: 2024-09-13 18:58\n"
+"POT-Creation-Date: 2025-06-05 16:21\n"
 "PO-Revision-Date: 2015-02-06 21:56-0600\n"
 "Last-Translator:Chel Hee Lee  <chl948@mail.usask.ca>\n"
 "Language-Team: Chel Hee Lee  <chl948@mail.usask.ca>\n"
@@ -68,7 +68,6 @@ msgstr "'R'은 반드시 양수이어야 합니다."
 msgid "'alpha' ignored; R[1L] = 0"
 msgstr "입력된 'alpha'의 값이 무시되었으며 R[1L] = 0이 적용됩니다."
 
-#. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
 #. R/bootfuns.q: stop("'data' must be a matrix with at least 2 columns")
 #: R/bootfuns.q:0
 msgid "'data' must be a matrix with at least 2 columns"
@@ -170,8 +169,6 @@ msgid "bootstrap output object or 't0' required"
 msgstr "붓스트랩으로부터 생성된 객체 또는 't0'가 필요합니다."
 
 #. R/bootpracs.q: stop("bootstrap replicates must be supplied")
-#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
-#. R/bootpracs.q: stop("bootstrap replicates must be supplied")
 #: R/bootpracs.q:0
 msgid "bootstrap replicates must be supplied"
 msgstr "붓스트랩 반복수(bootstrap replicates)는 반드시 주어져야 합니다."
@@ -196,8 +193,6 @@ msgstr "'R'과 'weights'의 차원이 서로 일치하지 않습니다."
 msgid "either 'A' and 'u' or 'K.adj' and 'K2' must be supplied"
 msgstr "'A'와 'u' 또는 'K.adj'와 'K2' 둘 중의 한 쌍은 반드시 제공되어야 합니다."
 
-#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
-#. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
 #. R/bootpracs.q: stop("either 'boot.out' or 'w' must be specified.")
 #: R/bootpracs.q:0
 msgid "either 'boot.out' or 'w' must be specified."
@@ -354,16 +349,6 @@ msgid "only first column of 't' used"
 msgstr "오로지 't'의 첫번째 열만이 사용됩니다."
 
 #. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootfuns.q: warning("only first element of 'index' used")
-#. R/bootpracs.q: warning("only first element of 'index' used")
-#. R/bootpracs.q: warning("only first element of 'index' used")
 #. R/bootpracs.q: warning("only first element of 'index' used")
 #: R/bootfuns.q:0 R/bootpracs.q:0
 msgid "only first element of 'index' used"
@@ -404,9 +389,6 @@ msgstr "'var.t0'를 계산할 수 없습니다."
 msgid "unable to find multiplier for %f"
 msgstr "%f에 대한 계수(multiplier)를 찾을 수 없습니다."
 
-#. R/bootfuns.q: stop("unable to find range")
-#. R/bootfuns.q: stop("unable to find range")
-#. R/bootfuns.q: stop("unable to find range")
 #. R/bootfuns.q: stop("unable to find range")
 #: R/bootfuns.q:0
 msgid "unable to find range"
