@@ -1,4 +1,4 @@
-e2dc88dcdb8e1f5903ad9a97f908d117 *inst/po/pl/LC_MESSAGES/R-boot.mo
+c2e6a4762b8ee8695f3caf44811c5696 *inst/po/pl/LC_MESSAGES/R-boot.mo
 0f30a464ebeb551919481ad60517f1ba *inst/po/ru/LC_MESSAGES/R-boot.mo
 a7431f0d6baac9766369161ed90a9326 *inst/po/ko/LC_MESSAGES/R-boot.mo
 22caf058cde6389aeec0081dfb1d9272 *inst/po/de/LC_MESSAGES/R-boot.mo
@@ -100,7 +100,7 @@ c7f814d422e07460878d57c7d96e717d *man/aircondit.Rd
 eb986c3263baeaeb9ff867964c297249 *man/saddle.distn.Rd
 8750815aed033087b21d3d83b9d1cc97 *tests/Examples/boot-Ex.Rout.save
 b4dfe10981d951aa98ea64ecbb96f778 *tests/parallel-censboot.R
-8c54e1b8d58c3dc6bc60968eecc80bf5 *po/R-pl.po
+8c84701fb297821977a99a7cf452cb34 *po/R-pl.po
 120b1942b09455c702a05cc6e0f6324a *po/R-de.po
 d278a4bc239586446db536be3cbf3c78 *po/R-ru.po
 cf6dc961dac4426e95a476faef26b5aa *po/R-it.po
